@@ -2,7 +2,7 @@
 
 Benytter in-memory datastore for lesing og lagring av data.
 
-Api-kall som kan testes (nødvendig test-data kan hentes fra BookingsDataStore):
+Api-kall som kan testes:
 
 GET:
 
@@ -14,3 +14,7 @@ GET:
 POST:
 
 /api/Booking/CreateBooking
+
+--
+
+Test-data er tilgjengelig i BookingsDataStore.
