@@ -33,7 +33,7 @@ namespace CarRental.Application.Services
                 return await Task.FromResult(new OperationResult<BookingDTO>
                 {
                     Success = false,                   
-                    Errors = new List<string> { string.Format("Booking witd ID: {id} not found.", id)}
+                    Errors = new List<string> { string.Format("Booking witd ID: {0} not found.", id)}
                 });
             }
 
