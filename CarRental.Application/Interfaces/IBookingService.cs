@@ -8,6 +8,6 @@ namespace CarRental.Application.Interfaces
     {
         Task<OperationResult<BookingDTO>> GetBookingById(Guid id);
         Task<OperationResult<BookingDTO>> CreateBooking(BookingCreationDTO bookingCreationDTO);
-        Task<List<BookingDTO>> GetAllBookings();
+        Task<IEnumerable<BookingDTO>> GetAllBookings();
     }
 }

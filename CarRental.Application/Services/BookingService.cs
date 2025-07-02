@@ -57,7 +57,7 @@ namespace CarRental.Application.Services
             });
         }
 
-        public async Task<List<BookingDTO>> GetAllBookings()
+        public async Task<IEnumerable<BookingDTO>> GetAllBookings()
         {
             return await Task.FromResult(_bookingsDataStore.Bookings.Select(b => new BookingDTO
             {

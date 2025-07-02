@@ -36,10 +36,10 @@ namespace CarRental.API.Controllers
         }
 
         [HttpGet("GetAllBookings")]
-        public async Task<ActionResult<List<BookingDTO>>> GetAllBookings()
+        public async Task<ActionResult<IEnumerable<BookingDTO>>> GetAllBookings()
         {
             var bookings = await _bookingService.GetAllBookings();
-            if(bookings.Count == 0)
+            if(bookings.Count() == 0)
             {
                 return NotFound("No bookings found.");
             }
