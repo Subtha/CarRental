@@ -15,7 +15,6 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-builder.Services.AddScoped<BookingPriceCalculationData>();
 builder.Services.AddScoped<IBookingService, BookingService>();
 builder.Services.AddSingleton<BookingsDataStore>();
 

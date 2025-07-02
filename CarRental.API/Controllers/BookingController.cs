@@ -18,7 +18,7 @@ namespace CarRental.API.Controllers
             _logger = logger ?? throw new ArgumentNullException(nameof(logger), "Logger can not be null");
         }
 
-        [HttpGet("GetBookingById/{Id}", Name = "GetBookingById")]
+        [HttpGet("GetBookingById/{id}", Name = "GetBookingById")]
         public async Task<ActionResult<BookingDTO>> GetBookingById(Guid id)
         {
             if (id == Guid.Empty)
